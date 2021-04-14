@@ -1,0 +1,20 @@
+{
+  "name": "vue-router-demo",
+  "version": "1.0.0",
+  "description": "vue路由使用及原理",
+  "scripts": {
+    "dev": "vue-cli-service serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "@vue/cli-service": "^4.5.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

@@ -1,0 +1,5 @@
+<template>
+    <div class="child2">
+        child2
+    </div>
+</template>
