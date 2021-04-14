@@ -1,2 +1,2 @@
-# vue-ui
-用vue造轮子实现ui框架
+# vue-router
+vue路由使用及原理
