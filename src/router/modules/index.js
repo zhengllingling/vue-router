@@ -5,7 +5,7 @@ import { child1, child2 } from './index.as';
 // import Child2 from "../../views/home/child2";
 const routes = [
     {  
-        // path: '/home/:id', // 动态路由配置 id存在与param中
+        // path: '/home/:id', //   动态路由配置 id存在与param中
         path: '/home',
         name: 'home',
         component: home,
