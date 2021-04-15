@@ -9,6 +9,10 @@ const child2 = {
     beforeEnter: (to, from, next) => {
         console.log(to, 'child2 beforeEnter')
         next();
+    },
+    // 路由元信息 添加一些字段用于登陆验证，传递路由标题等等一些功能
+    meta: {
+        title: 'child2'
     }
 }
 

@@ -18,6 +18,10 @@ export default {
     beforeRouteEnter(to, from, next) {
         console.log(to, 'child2 beforeRouteEnter')
         next();
+    },
+    created() {
+        // matched 所有匹配的路由记录
+        console.log(this.$route);
     }
 }
 </script>
