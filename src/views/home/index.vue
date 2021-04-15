@@ -24,7 +24,7 @@ export default {
     },
     watch: {
         $route(to, from){
-            // 监听路由信息，改变transition的name来动态设置路由过渡效果，还可以在每个组件上加transition标签设置不同的name来给个没有路由组件设置不同的国度效果
+            // 监听路由信息，改变transition的name来 动态设置路由过渡效果，还可以在每个组件上加transition标签设置不同的name来给个没有路由组件设置不同的国度效果
             // 所有transition的功能在这边都可以使用
             console.log(to, "home $route to watch");
         }
