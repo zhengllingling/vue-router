@@ -14,6 +14,10 @@ export default {
                 console.log(val.params, 'params');
             }
         }
+    },
+    beforeRouteEnter(to, from, next) {
+        console.log(to, 'child2 beforeRouteEnter')
+        next();
     }
 }
 </script>

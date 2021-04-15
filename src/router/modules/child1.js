@@ -3,7 +3,7 @@ import Test1 from "../../views/home/test1";
 import Test2 from "../../views/home/test2";
 
 const child1 = {
-    path: 'child1',
+    // path: 'child1/:id',
     // path: 'child1/:id/:name',
     name: 'child1',
     component: Child1,
@@ -29,7 +29,11 @@ const child1 = {
     //         id: route.params.id,
     //         query: route.query.a
     //     }
-    // }
+    // },
+    beforeEnter:(to,from,next) => {
+        console.log(to, 'child1 beforeEnter')
+        next();
+    }
 }
 
 export default child1;
