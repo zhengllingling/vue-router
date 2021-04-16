@@ -15,6 +15,8 @@
     </div>
 </template>
 <script>
+import VueRouter from "vue-router";
+const { isNavigationFailure, NavigationFailureType } = VueRouter;
 export default {
     name: 'home',
     data(){
@@ -40,10 +42,12 @@ export default {
          * 编程式导航
         */
         programRouter() {
-            this.$router.push({name: 'child1'})
-            this.$router.push({name: 'child2', query: { id: 1}, params: {name: 'child21'}});
-            this.$router.go(1);
-            this.$router.replace({name: 'child2'});
+            this.$router.push({name: 'child1'}).catch(failure => {
+                console.log(isNavigationFailure(failure, NavigationFailureType.duplicated));
+            })
+            // this.$router.push({name: 'child2', query: { id: 1}, params: {name: 'child21'}});
+            // this.$router.go(1);
+            // this.$router.replace({name: 'child2'});
         }
     }
 }
