@@ -1,9 +1,19 @@
+import login from '../../views/login';
 import home from '../../views/home';
 import page404 from "../../views/404";
 import { child1, child2 } from './index.as';
 // import Child1 from "../../views/home/child1";
 // import Child2 from "../../views/home/child2";
 const routes = [
+    {
+        path: '/',
+        redirect: '/home'
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: login
+    },
     {  
         // path: '/home/:id', //   动态路由配置 id存在与param中
         path: '/home',
