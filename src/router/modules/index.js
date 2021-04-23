@@ -1,7 +1,7 @@
 import login from '../../views/login';
 import home from '../../views/home';
 import page404 from "../../views/404";
-import { child1, child2 } from './index.as';
+import { child1, child2, test } from './index.as';
 // import Child1 from "../../views/home/child1";
 // import Child2 from "../../views/home/child2";
 const routes = [
@@ -28,7 +28,7 @@ const routes = [
         //     return `${to.path}/child1`
         // },
         // 嵌套路由
-        children: [ child1, child2 ]
+        children: [ child1, child2, test ]
         // // 命名视图
         // children: [
         //     {
