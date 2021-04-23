@@ -4,6 +4,14 @@ import App from "./App.vue";
 import router from './router';
 import store from './store';
 
+import direction from "../src/direction";
+
+Object.keys(direction).forEach(key => {
+    Vue.directive(key, direction[key]);
+});
+
+Vue.config.productionTip = false;
+
 
 /** 
  * 导航守卫

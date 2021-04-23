@@ -1,10 +1,11 @@
 <template>
     <div class="test">
-        <span>{{count}}</span>
+        <!-- <span>{{count}}</span>
         <span>{{count1}}</span>
         <span>{{name}}</span>
         <button @click="setCount(23)">测试</button>
-        <button @click="SetName('ee')">测试1</button>
+        <button @click="SetName('ee')">测试1</button> -->
+        <input v-focus/>
     </div>
 </template>
 <script>
