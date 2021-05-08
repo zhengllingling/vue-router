@@ -1,7 +1,7 @@
 import login from '../../views/login';
 import home from '../../views/home';
 import page404 from "../../views/404";
-import { child1, child2, test } from './index.as';
+import { child1, child2, test, responsiveTest } from './index.as';
 // import Child1 from "../../views/home/child1";
 // import Child2 from "../../views/home/child2";
 const routes = [
@@ -41,6 +41,7 @@ const routes = [
         //     }
         // ]
     },
+    responsiveTest,
     {
         // 通配符 必须放在最后
         path: "*",

@@ -22,6 +22,9 @@ export default {
         }),
         ...mapGetters(["count1"])
     },
+    beforeCreate(){
+        console.log(this);
+    },
     mounted(){
         this.$store.commit('setCount', 10)
         this.$store.dispatch("changeCount", 100)
