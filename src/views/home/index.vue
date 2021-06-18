@@ -21,7 +21,13 @@ export default {
     name: 'home',
     data(){
         return{
-            transitionName: ""
+            transitionName: "",
+            arr: [
+                {
+                    a: 1
+                }
+            ],
+            s1: new Set()
         }
     },
     watch: {
@@ -29,6 +35,18 @@ export default {
             // 监听路由信息，改变transition的name来 动态设置路由过渡效果，还可以在每个组件上加transition标签设置不同的name来给个没有路由组件设置不同的国度效果
             // 所有transition的功能在这边都可以使用
             console.log(to, "home $route to watch");
+        },
+        arr:{
+            deep: true,
+            handler(val){
+                console.log(val);
+            }
+        },
+        s1: {
+            deep: true,
+            handler(val){
+                console.log(val);
+            }
         }
     },
     created() {
@@ -36,7 +54,13 @@ export default {
     },
     methods: {
         routeJump(name) {
-            this.$router.push({name});
+            // this.$router.push({name});
+            // vue不能监听数组，但是对数组的push pop等方法实现了监听
+            // this.$set(this.arr, '0', 1);
+            // this.arr.push(1);
+            // this.arr[2] = 1;
+            this.s1.add(1);
+            
         },
         /** 
          * 编程式导航
